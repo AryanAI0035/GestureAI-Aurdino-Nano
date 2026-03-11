@@ -9,7 +9,7 @@ By employing a highly constrained spatial array of three Digital Infrared (IR) P
 
 ## Demonstration
 
-`![System Demonstration](assets/demo_video.gif)`
+`![System Demonstration](assets/demo_video.MP4)`
 
 ## System Architecture
 
@@ -128,6 +128,7 @@ This script reads the CSV datasets, trains the Decision Tree, and outputs an upd
 3. Select "Arduino Nano" as the target board. (Note: Depending on the board manufacturer, you may need to select "ATmega328P (Old Bootloader)" under the Processor menu).
 4. Compile and upload the firmware.
 5. Open the Serial Monitor at 9600 baud to observe real-time inference data.
+
 
 
 
