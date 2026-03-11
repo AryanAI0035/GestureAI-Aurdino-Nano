@@ -7,7 +7,7 @@ from micromlgen import port
 
 # --- 1. CONFIGURATION ---
 # We are capturing 10 readings per second (100ms delay in Arduino).
-# A swipe takes about 0.6 to 1 seconds. So, our "window" is 6 rows.
+# A swipe takes about 0.6 to 1 seconds. So, our "window" is 8 rows.
 WINDOW_SIZE = 8 
 FILES = {
     "idle.csv": 0,
