@@ -9,7 +9,9 @@ By employing a highly constrained spatial array of three Digital Infrared (IR) P
 
 ## Demonstration
 
-`![System Demonstration](assets/demo_video.MP4)`
+
+https://github.com/user-attachments/assets/de659933-8bab-41d6-9875-11e94466a169
+
 
 ## System Architecture
 
@@ -55,8 +57,10 @@ A core challenge of TinyML is balancing model complexity with extreme hardware l
 | **Flash Utilization** | 139% (Overflow Failure) | ~15% (Success) |
 | **SRAM Utilization** | > 2 KB (Heap Crash Risk) | < 450 Bytes |
 | **Inference Latency** | ~120 ms | < 20 ms |
+| **Screenshot** |<img width="908" height="695" alt="Decisiontree_results" src="https://github.com/user-attachments/assets/c5ecf5f0-acca-436c-96ef-8edf37acbe66" /> | <img width="896" height="685" alt="Randomforest_results" src="https://github.com/user-attachments/assets/0f207bee-6919-4d78-8c69-d8288dac5b29" />
 
 Switching from a Random Forest ensemble to a constrained Decision Tree reduced the memory footprint by approximately 90% while incurring only a nominal 3% accuracy penalty, allowing stable bare-metal execution.
+<img width="886" height="158" alt="Tradeoff" src="https://github.com/user-attachments/assets/727a3d0c-1d0a-42e9-90d7-aa4ccbd5d036" />
 
 ## Engineering Challenges and Optimizations
 
@@ -128,6 +132,7 @@ This script reads the CSV datasets, trains the Decision Tree, and outputs an upd
 3. Select "Arduino Nano" as the target board. (Note: Depending on the board manufacturer, you may need to select "ATmega328P (Old Bootloader)" under the Processor menu).
 4. Compile and upload the firmware.
 5. Open the Serial Monitor at 9600 baud to observe real-time inference data.
+
 
 
 
