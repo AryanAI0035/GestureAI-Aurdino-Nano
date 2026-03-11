@@ -17,7 +17,7 @@ By employing a highly constrained spatial array of three Digital Infrared (IR) P
 
 * **Microcontroller:** Arduino Nano (ATmega328P, 16 MHz, 32 KB Flash, 2 KB SRAM)
 * **Input Peripherals:** 3x Digital IR Proximity Sensors
-* **Output Peripherals:** 3x LEDs (Green, Red, Red) acting as action indicators.
+* **Output Peripherals:** 2x LEDs (Green, Red) acting as action indicators.
 * **Architecture:** Offline Edge Inference (No cloud connectivity or external coprocessors).
 
 ### Pin Mapping
@@ -27,7 +27,6 @@ By employing a highly constrained spatial array of three Digital Infrared (IR) P
 | IR Sensor (Up) | D2 | Spatial Trigger (Y-Axis) |
 | IR Sensor (Down) | D3 | Spatial Trigger (Y-Axis) |
 | IR Sensor (Left) | D4 | Spatial Trigger (X-Axis) |
-| Indicator LED 1 | D9 | Output: "Push In" Gesture |
 | Indicator LED 2 | D8 | Output: "Swipe Left" Gesture |
 | Indicator LED 3 | D10 | Output: "Swipe Right" Gesture |
 
@@ -129,5 +128,6 @@ This script reads the CSV datasets, trains the Decision Tree, and outputs an upd
 3. Select "Arduino Nano" as the target board. (Note: Depending on the board manufacturer, you may need to select "ATmega328P (Old Bootloader)" under the Processor menu).
 4. Compile and upload the firmware.
 5. Open the Serial Monitor at 9600 baud to observe real-time inference data.
+
 
 
